@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/AppSec_Portfolio-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a href="https://github.com/advisories/GHSA-5c5w-x8jp-fjqw">
-    <img src="https://img.shields.io/badge/CVE_Author-FF0000?style=for-the-badge&logo=cve&logoColor=white" />
+    <img src="https://img.shields.io/badge/CVE_Author-FF0000?style=for-the-badge&logoColor=white" />
   </a>
 </p>
 
@@ -24,7 +24,7 @@ tanjot = {
     "degree"     : "B.Tech CSE @ MIET Jammu '28",
     "approach"   : "Manual-first. Proof-of-work over certifications.",
     "hunting"    : ["HackerOne", "GitHub OSS CVEs"],
-    "currently"  : ["HeaderGuard V2", "Zero Trust API Gateway", "CVE hunting"],
+    "currently"  : ["HeaderGuard V2", "Open-source security audits", "CVE hunting"],
 }
 ```
 
@@ -75,25 +75,25 @@ tanjot = {
       <img src="https://img.shields.io/badge/Status-V2_In_Progress-FFA500?style=flat-square" />
     </td>
     <td width="50%">
-      <h3>🛡️ Zero Trust API Gateway</h3>
-      <p>FastAPI + Redis gateway with JWT auth, rate limiting, and zero-trust principles.</p>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-      <img src="https://img.shields.io/badge/Status-In_Progress-FFA500?style=flat-square" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
       <h3>🔑 PassVault</h3>
       <p>Encrypted password manager in Python.</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Status-Done-4CAF50?style=flat-square" />
     </td>
+  </tr>
+  <tr>
     <td width="50%">
       <h3>📁 File Integrity Scanner</h3>
       <p>Hash-based file change detection tool.</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Status-Done-4CAF50?style=flat-square" />
+    </td>
+    <td width="50%">
+      <h3>🛡️ Zero Trust API Gateway</h3>
+      <p>FastAPI + Redis gateway with JWT auth and rate limiting. Planned next after HeaderGuard V2.</p>
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+      <img src="https://img.shields.io/badge/Status-Planned-808080?style=flat-square" />
     </td>
   </tr>
 </table>
@@ -103,11 +103,6 @@ tanjot = {
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Tanjot-Singh-cyber&show_icons=true&theme=radical&hide_border=true&count_private=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tanjot-Singh-cyber&layout=compact&theme=radical&hide_border=true" height="165" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Tanjot-Singh-cyber&theme=radical&hide_border=true" />
 </p>
 
@@ -115,10 +110,9 @@ tanjot = {
 
 ### 🎯 Currently
 
-- 🔍 Hunting on HackerOne — GraphQL & API security focus
+- 🔍 Open-source security audits — static code review via Semgrep
+- 🐛 CVE hunting on small Python/JS repos (50–500 stars)
 - 🔨 Building HeaderGuard V2 — TLS validation + AI-powered analysis
-- 🐛 Static code review for CVEs on open-source Python/JS repos
-- 📚 45+ PortSwigger labs completed
 
 ---
 
