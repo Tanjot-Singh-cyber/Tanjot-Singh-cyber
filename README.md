@@ -1,5 +1,7 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&height=200&section=header&text=Tanjot%20Singh&fontSize=50&fontColor=FF3C3C&fontAlignY=35&desc=Application%20Security%20Researcher&descColor=FF3C3C&descAlignY=55&descSize=20&animation=fadeIn" width="100%"/>
+
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=F75C7E&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Tanjot+Singh+%F0%9F%91%8B;Application+Security+Researcher;CVE+Author+%7C+Bug+Bounty+Hunter;B.Tech+CSE+%40+MIET+Jammu+%2728" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=FF3C3C&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Tanjot+Singh+%F0%9F%91%8B;Application+Security+Researcher;CVE+Author+%7C+Bug+Bounty+Hunter;B.Tech+CSE+%40+MIET+Jammu+%2728" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -32,7 +34,7 @@ tanjot = {
 
 | # | Vulnerability | Target | Severity | Reference |
 |---|--------------|--------|----------|-----------|
-| 1 | **SSRF** — unvalidated URL parameter allows internal network requests | Blombooru (FastAPI) | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | [GHSA-5c5w-x8jp-fjqw](https://github.com/advisories/GHSA-5c5w-x8jp-fjqw) · CWE-918 |
+| 1 | **SSRF** — unvalidated URL parameter allows internal network requests | Blombooru (FastAPI) | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | GHSA-5c5w-x8jp-fjqw · CWE-918 · Pending publication |
 | 2 | **IDOR/BOLA** — GraphQL query accepts cross-user UUIDs without auth | subspace.money | ![Medium](https://img.shields.io/badge/Medium-FFA500?style=flat-square) | Reported via Bugbase |
 
 ---
@@ -113,15 +115,21 @@ tanjot = {
 - 🔨 Building HeaderGuard V2 — TLS validation + AI-powered analysis
 
 ---
+
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Tanjot-Singh-cyber&color=F75C7E&style=flat-square&label=Profile+Views" />
+  <img src="https://komarev.com/ghpvc/?username=Tanjot-Singh-cyber&color=FF3C3C&style=flat-square&label=Profile+Views" />
 </p>
+
 <p align="center">
   <a href="https://github.com/Tanjot-Singh-cyber/gigcash-web-security">
     <img src="https://img.shields.io/badge/→_AppSec_Portfolio_%26_Write--ups-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
+---
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=F75C7E&center=true&vCenter=true&width=600&lines=Always+learning.;Breaking+things+legally.;Manual-first.+Tools-assisted.;Open+to+internships+%2726.;If+it+has+an+API%2C+I+will+test+it." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=FF3C3C&center=true&vCenter=true&width=600&lines=Always+learning.;Breaking+things+legally.;Manual-first.+Tools-assisted.;Open+to+internships+%2726.;If+it+has+an+API%2C+I+will+test+it." alt="Typing SVG" />
 </p>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&height=120&section=footer" width="100%"/>
