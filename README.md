@@ -9,9 +9,7 @@
   <a href="https://github.com/Tanjot-Singh-cyber/gigcash-web-security">
     <img src="https://img.shields.io/badge/AppSec_Portfolio-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <a href="https://github.com/advisories/GHSA-5c5w-x8jp-fjqw">
-    <img src="https://img.shields.io/badge/CVE_Author-FF0000?style=for-the-badge&logoColor=white" />
-  </a>
+
 </p>
 
 ---
