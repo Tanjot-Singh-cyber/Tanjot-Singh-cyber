@@ -22,8 +22,8 @@ tanjot = {
     "focus"      : "Application Security",
     "degree"     : "B.Tech CSE @ MIET Jammu '28",
     "approach"   : "Manual-first. Proof-of-work over certifications.",
-    "hunting"    : ["HackerOne", "GitHub OSS CVEs"],
-    "currently"  : ["HeaderGuard V2", "Open-source security audits", "CVE hunting"],
+    "hunting"    : ["HackerOne", "Bugbase", "GitHub OSS CVEs"],
+    "currently"  : ["HeaderGuard V2 deployed", "Open-source security audits", "CVE hunting"],
 }
 ```
 
@@ -33,8 +33,10 @@ tanjot = {
 
 | # | Vulnerability | Target | Severity | Reference |
 |---|--------------|--------|----------|-----------|
-| 1 | **SSRF** — unvalidated URL parameter allows internal network requests | Blombooru (FastAPI) | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | GHSA-5c5w-x8jp-fjqw · CWE-918 · Pending publication |
-| 2 | **IDOR/BOLA** — GraphQL query accepts cross-user UUIDs without auth | subspace.money | ![Medium](https://img.shields.io/badge/Medium-FFA500?style=flat-square) | Reported via Bugbase |
+| 1 | **SSRF** — unvalidated URL parameter allows internal network requests | Blombooru (FastAPI) | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | GHSA-5c5w-x8jp-fjqw · CWE-918 · Fix planned v1.40.0 · CVE in progress |
+| 2 | **SSRF bypass** — `validate_url()` absent on feed edit path, bypassing developer's own protection | newspipe (Flask) | ![Medium](https://img.shields.io/badge/Medium-FFA500?style=flat-square) | CWE-918 · Disclosed via email |
+| 3 | **Unauthenticated SSRF** — no-auth default + unvalidated destination parameter | mediaflow-proxy (FastAPI) | ![Medium](https://img.shields.io/badge/Medium-FFA500?style=flat-square) | CWE-918 · Disclosed via email |
+| 4 | **IDOR/BOLA** — GraphQL query accepts cross-user UUIDs without authorization check | subspace.money | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | CWE-639 · Reported via Bugbase |
 
 ---
 
@@ -68,28 +70,28 @@ tanjot = {
   <tr>
     <td width="50%">
       <h3>HeaderGuard</h3>
-      <p>HTTP security header analyzer. Multi-layer scoring, weak config detection, deployed on Replit.</p>
+      <p>Three-layer web security analyzer — HTTP header inspection, TLS/SSL validation, and Gemini AI contextual analysis. Weighted grading, never outputs "Safe", graceful degradation.</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
-      <img src="https://img.shields.io/badge/Status-V2_In_Progress-FFA500?style=flat-square" />
+      <img src="https://img.shields.io/badge/Status-V2_Complete-4CAF50?style=flat-square" />
     </td>
     <td width="50%">
       <h3>PassVault</h3>
-      <p>Encrypted password manager in Python.</p>
+      <p>Encrypted CLI password manager. Fernet/AES encryption, SHA-256 + salt master password hashing, cryptographically secure generation via secrets module.</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/Status-Done-4CAF50?style=flat-square" />
+      <img src="https://img.shields.io/badge/Status-Complete-4CAF50?style=flat-square" />
     </td>
   </tr>
   <tr>
     <td width="50%">
       <h3>File Integrity Scanner</h3>
-      <p>Hash-based file change detection tool.</p>
+      <p>Static USB malware scanner. Magic byte detection, SHA-256 integrity verification, ECDSA-signed forensic reports for tamper-evident output.</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/Status-Done-4CAF50?style=flat-square" />
+      <img src="https://img.shields.io/badge/Status-Complete-4CAF50?style=flat-square" />
     </td>
     <td width="50%">
       <h3>Zero Trust API Gateway</h3>
-      <p>FastAPI + Redis gateway with JWT auth and rate limiting. Planned next after HeaderGuard V2.</p>
+      <p>FastAPI + Redis gateway with JWT auth, rate limiting, and AI log analysis. Planned next after HeaderGuard V3.</p>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
       <img src="https://img.shields.io/badge/Status-Planned-808080?style=flat-square" />
@@ -109,9 +111,10 @@ tanjot = {
 
 ### Currently
 
-- Open-source security audits — static code review via Semgrep
-- CVE hunting on small Python/JS repos (50–500 stars)
-- Building HeaderGuard V2 — TLS validation + AI-powered analysis
+- Open-source security audits — static code review via Semgrep + manual source tracing
+- CVE hunting on actively maintained Python/JS repos (500–3000 stars)
+- blombooru SSRF advisory accepted — fix incoming, CVE in progress
+- Building HeaderGuard V3 — packet capture + unified scoring
 
 ---
 
