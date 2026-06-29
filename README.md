@@ -23,7 +23,7 @@ tanjot = {
     "degree"     : "B.Tech CSE @ MIET Jammu '28",
     "approach"   : "Manual-first. Proof-of-work over certifications.",
     "hunting"    : ["HackerOne", "Bugbase", "GitHub OSS CVEs"],
-    "currently"  : ["HeaderGuard V2 deployed", "Open-source security audits", "CVE hunting"],
+    "currently"  : ["Open-source security audits", "CVE hunting", "HeaderGuard V3"],
 }
 ```
 
@@ -33,10 +33,8 @@ tanjot = {
 
 | # | Vulnerability | Target | Severity | Reference |
 |---|--------------|--------|----------|-----------|
-| 1 | **SSRF** — unvalidated URL parameter allows internal network requests | Blombooru (FastAPI) | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | GHSA-5c5w-x8jp-fjqw · CWE-918 · Fix planned v1.40.0 · CVE in progress |
-| 2 | **SSRF bypass** — `validate_url()` absent on feed edit path, bypassing developer's own protection | newspipe (Flask) | ![Medium](https://img.shields.io/badge/Medium-FFA500?style=flat-square) | CWE-918 · Disclosed via email |
-| 3 | **Unauthenticated SSRF** — no-auth default + unvalidated destination parameter | mediaflow-proxy (FastAPI) | ![Medium](https://img.shields.io/badge/Medium-FFA500?style=flat-square) | CWE-918 · Disclosed via email |
-| 4 | **IDOR/BOLA** — GraphQL query accepts cross-user UUIDs without authorization check | subspace.money | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | CWE-639 · Reported via Bugbase |
+| 1 | **SSRF** — unvalidated URL parameter allows internal network requests via `/api/media/` endpoint | Blombooru (FastAPI) | ![Moderate](https://img.shields.io/badge/Moderate-FFA500?style=flat-square) | [GHSA-5c5w-x8jp-fjqw](https://github.com/advisories/GHSA-5c5w-x8jp-fjqw) · CVE-2026-57448 · CWE-918 · Patched v1.40.0 |
+| 2 | **IDOR/BOLA** — GraphQL `getBankDetails` query accepts cross-user UUIDs without authorization check | subspace.money | ![High](https://img.shields.io/badge/High-FF0000?style=flat-square) | CWE-639 · Reported via Bugbase |
 
 ---
 
@@ -113,7 +111,6 @@ tanjot = {
 
 - Open-source security audits — static code review via Semgrep + manual source tracing
 - CVE hunting on actively maintained Python/JS repos (500–3000 stars)
-- blombooru SSRF advisory accepted — fix incoming, CVE in progress
 - Building HeaderGuard V3 — packet capture + unified scoring
 
 ---
@@ -131,7 +128,7 @@ tanjot = {
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Always+learning.;Breaking+things+legally.;Manual-first.+Tools-assisted.;Open+to+internships+%2726.;If+it+has+an+API%2C+I+will+test+it." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Always+learning.;Breaking+things+legally.;Manual-first.+Tools-assisted.;Open+to+internships.;If+it+has+an+API%2C+I+will+test+it." alt="Typing SVG" />
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0d0d0d&height=120&section=footer" width="100%"/>
